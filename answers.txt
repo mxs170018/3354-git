@@ -4,7 +4,13 @@ C)Status shows changes to files that are being staged and files that are not, wh
 Log shows the changes to files that are already committed 
 D) Unstaged files are being primed to be committed and untracked ones will not be committed
 E)Reset is to un-stage a file whereas checkout discards changes in working directory
-F) This happens VVV (boots) 
-* branch            HEAD       -> FETCH_HEAD
-Already up to date.
+
+F) This happens VVV (test)
+error: Your local changes to the following files would be overwritten by merge:
+	answers.txt
+Please commit your changes or stash them before you merge.
+Aborting
+
+And then I need to decide on one or the other then commit again
+
  
