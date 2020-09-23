@@ -9,7 +9,14 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } catch (Exception e) {
-            System.err.println("Please provide valid integers to be added");
+            if(args.length == 1){
+                System.err.println("Not Enough Arguments");
+            }else if(args[0].equals("-") == false){
+                 System.err.println("Invalid character");
+            }else{
+                System.err.println("Please provide valid integers to be added");
+            }
+           
         }
     }
 
